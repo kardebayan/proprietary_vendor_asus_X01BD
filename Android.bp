@@ -864,53 +864,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.qti.hardware.fingerprint@1.0",
-    owner: "asus",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/vendor.qti.hardware.fingerprint@1.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "libhidltransport",
-                "libhwbinder",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "libhidltransport",
-                "libhwbinder",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libactuator_imx486_holitech_12m",
     owner: "asus",
     strip: {
@@ -6295,15 +6248,6 @@ cc_prebuilt_library_shared {
     relative_install_path: "hw",
     prefer: true,
     soc_specific: true,
-}
-
-dex_import {
-    name: "vendor.qti.hardware.fingerprint-V1.0-java",
-    owner: "asus",
-    jars: [
-        "proprietary/product/framework/vendor.qti.hardware.fingerprint-V1.0-java.jar",
-    ],
-    product_specific: true,
 }
 
 cc_prebuilt_binary {

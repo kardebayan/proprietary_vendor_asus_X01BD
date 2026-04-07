@@ -6,7 +6,6 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/asus/X01BD
 
 PRODUCT_COPY_FILES += \
-    vendor/asus/X01BD/proprietary/product/etc/permissions/qti_fingerprint_interface.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/qti_fingerprint_interface.xml \
     vendor/asus/X01BD/proprietary/vendor/etc/acdbdata/QRD/NonCE/QRD_NonCE_Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/QRD/NonCE/QRD_NonCE_Bluetooth_cal.acdb \
     vendor/asus/X01BD/proprietary/vendor/etc/acdbdata/QRD/NonCE/QRD_NonCE_General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/QRD/NonCE/QRD_NonCE_General_cal.acdb \
     vendor/asus/X01BD/proprietary/vendor/etc/acdbdata/QRD/NonCE/QRD_NonCE_Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/QRD/NonCE/QRD_NonCE_Global_cal.acdb \
@@ -85,7 +84,6 @@ PRODUCT_PACKAGES += \
     libscvePanorama \
     libscvePanorama_lite \
     libvideoutils \
-    vendor.qti.hardware.fingerprint@1.0 \
     libactuator_imx486_holitech_12m \
     libarcsoft_dualcam_refocus \
     libchromatix_csidtg_common \
@@ -282,5 +280,4 @@ PRODUCT_PACKAGES += \
     libseemore \
     cdfinger.fingerprint.default \
     fingerprint.focaltech.default \
-    vendor.qti.hardware.fingerprint-V1.0-java \
     android.hardware.biometrics.fingerprint@2.1-service_asus
